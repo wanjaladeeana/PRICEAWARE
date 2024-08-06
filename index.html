@@ -1,0 +1,3050 @@
+<!-- Created by wanjala diana -->
+
+<!-- Created by wanjalan.student@cuk.ac.ke-->
+
+<!-- 
+
+code name => Priceware app 🛒🛍️ | 100% functional
+Creator => wanjala diana
+creation date => 7 june, 2024 | 8:05 PM (EST)
+time taken => 3months 
+
+
+copying is allowed if you modify it after copying, direct copying is only allowed with my permisson
+
+-->
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Priceware Shopping app</title>
+
+<meta charset="UTF-8" />
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<meta name="description" content="priceware shopping app" />
+
+<meta name="keywords" content="HTML, CSS, JavaScript , flipkit, sololearn , wanjala diana" />
+
+<meta name="author" content="wanjala diana" />   
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+      
+</head>
+
+<body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.js">
+</script>
+
+
+
+<div id="container">
+
+
+
+
+<div id="nav">
+
+<img src="data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjRkZGIiBoZWlnaHQ9IjM2IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIzNiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMyAxOGgxOHYtMkgzdjJ6bTAtNWgxOHYtMkgzdjJ6bTAtN3YyaDE4VjZIM3oiLz48L3N2Zz4=" id="sidebar">
+
+<img src="PriceAware.png"   alt="priceaware logo" />
+
+<span class="fa fa-shopping-cart" id="cartt" onclick="ViewCart()"></span>
+
+<i class="fas fa-bell" id="bell"></i>
+
+<input type="text" placeholder="search for products, brands and more" id="input" >
+
+</div>
+
+
+<div id="main">
+
+<div id="category">
+
+<img src="https://rukminim1.flixcart.com/flap/132/124/image/e3e79f5c3cbea9fd.jpg?q=90" class="ctg" alt="/" onclick="Categories()" id="cg">
+
+<img src="https://rukminim1.flixcart.com/flap/132/124/image/21f8a81a725f8388.jpg?q=90" class="ctg" alt="/" id="essentials" onclick="Show1()">
+
+<img src="https://rukminim1.flixcart.com/flap/132/124/image/570ea9.jpg?q=90" class="ctg" alt="/" onclick="Show2()">
+
+<img src="https://rukminim1.flixcart.com/flap/132/124/image/42f9a853f9181279.jpg?q=90" class="ctg" alt="/" onclick="Show3()">
+
+<img src="https://rukminim1.flixcart.com/flap/132/124/image/0fcff2bef81c354f.jpg?q=90" class="ctg" alt="/" onclick="Show4()">
+
+<img src="https://rukminim1.flixcart.com/flap/132/124/image/0574df.jpg?q=90" class="ctg" alt="/" onclick="Show5()">
+
+<img src="https://rukminim1.flixcart.com/flap/132/124/image/222e7382a2c2bd72.jpg?q=90" class="ctg" alt="/" onclick="Show6()">
+
+
+</div>  
+
+
+<div id="img">
+  
+
+<img class="image" src="https://rukminim1.flixcart.com/flap/720/320/image/00918adeec51cde8.jpg?q=90" alt="/" onclick="Load1()">
+
+<img class="image" src="phone.jpg" alt="/">
+
+<img class="image" src="https://rukminim1.flixcart.com/flap/720/320/image/585f296f7a7d4f5a.jpg?q=90" alt="/">
+
+<img class="image" src="phone2.jpg" alt="/">
+
+<img class="image" src="https://rukminim1.flixcart.com/flap/720/320/image/9385919765748308.jpg?q=90" alt="/">
+
+
+</div>
+
+
+<div id="type">
+    
+<img src="https://rukminim1.flixcart.com/flap/240/256/image/4ccccd96334927e1.jpg?q=60" alt="/" class="nav-img" onclick="Load2()">
+
+<img src="https://rukminim1.flixcart.com/flap/240/256/image/b14b72c051a58b56.jpg?q=60" alt="/" class="nav-img" onclick="Load3()">
+
+<img src="https://rukminim1.flixcart.com/flap/240/256/image/9d8dbbf5a2a5d16b.jpg?q=60" alt="/" class="nav-img" onclick="Load4()">
+
+
+</div>
+
+
+<div id="third-menu">
+
+<p class="text">Deals of the day</p>
+<p class="text">18 hours and 49 minutes left</p>
+
+<div class="card">
+
+<img src="necklace.jpg" alt="/" class="pic" onclick="OpenProduct1()">
+<img src="dress.jpg" alt="/" class="pic" onclick="OpenProduct2()">
+<img src="pillows.jpg" alt="/" class="pic" onclick="OpenProduct3()">
+<img src="trousers.jpg" alt="/" class="pic" onclick="OpenProduct4()">
+<img src="teddy.jpg" alt="/" class="pic" onclick="OpenProduct5()">
+
+</div>
+
+</div>
+
+</div>
+
+<hr><hr>
+
+<div id="sale">
+
+<p class="texxt"> Best of season sale </p>
+<small class="small">sponsored</small>   <br>
+
+<img src="https://rukminim1.flixcart.com/flap/240/256/image/ce226db451077b25.jpg?q=60" alt="/" class="sale" onclick="OpenProduct5()">
+
+<img src="https://rukminim1.flixcart.com/flap/240/320/image/ff03863954368bb7.jpg?q=60" alt="/" class="sale" onclick="OpenProduct6()">
+
+<img src="https://rukminim1.flixcart.com/flap/240/320/image/b4cf5e1404be61d7.jpg?q=60" alt="/" class="sale" onclick="OpenProduct7()">   
+
+</div>   
+    
+<hr>
+
+<div id="brand">
+
+<p class="texxt"> Featured Brand</p>
+<small class="small">sponsered</small>
+<img src="phone3.jpg" id="pic" alt="/" onclick="OpenProduct8()">
+
+</div>
+
+
+<div id="flight">
+
+<img src="Air Ticket Booking Ad Template.jpg" id="pic" alt="/" onclick="OpenProduct9()">
+
+</div>
+
+<hr>
+
+<div id="trending">
+
+<p class="taxt">trending</p>
+
+<input type="button" class="btn1" value="see more">
+
+<div id="card">
+
+<img src="https://rukminim1.flixcart.com/image/240/240/ke0a7ww0/stuffed-toy/v/v/w/soft-and-cute-blue-color-teddy-bear-6-feet-for-boys-and-girls-original-imafus5rgawxbhbr.jpeg?q=60" alt="/" class="pic" onclick="OpenProduct9()">
+
+<img src="https://rukminim1.flixcart.com/flap/240/240/image/76b4ef8387afa353.jpg?q=60" alt="/" class="pic" onclick="OpenProduct10()">
+
+<img src="https://rukminim1.flixcart.com/image/240/320/kdukgi80/jewellery-set/e/w/s/re20ns270752-rubans-original-imafunmyjthr96h2.jpeg?q=60" alt="/" class="pic" onclick="OpenProduct11()"> 
+
+<img src="https://rukminim1.flixcart.com/image/240/310/k98tdow0/kids-slipper-flip-flop/z/g/r/12-44170364700-gap-original-imafr29krkhjztxp.jpeg?q=60" alt="/" class="pic" onclick="OpenProduct12()">
+
+</div>
+
+</div>
+    
+<div id="insurance">
+
+<img src="https://rukminim1.flixcart.com/flap/720/320/image/b415fb5a96dcfd1c.jpg?q=60" alt="/" id="ins" onclick="BookInsurance()">
+
+</div>
+
+
+<div id="latest">
+    
+<p class="taxt">latest releases</p>
+<input type="button" class="btn2" value="see more">
+
+<div id="card3">
+    
+<img src="https://rukminim1.flixcart.com/image/240/222/kd4uj680/cushion-pillow-cover/a/m/d/sofa-decorative-yellow-printed-cushion-covers-sb-interio-original-imafu36chgpfhzp7.jpeg?q=60" alt="/" class="pic" onclick="OpenProduct13()">
+
+<img src="https://rukminim1.flixcart.com/flap/240/240/image/d1b1c172484ce877.jpg?q=60" alt="/" class="pic" onclick="OpenProduct14()"> 
+
+<img src="https://rukminim1.flixcart.com/image/750/750/kppt47k0/balloon/3/c/2/33-combo-of-33-1-piece-happy-birthday-banner-30-black-and-golden-original-imag3vbeyyzxnzuv.jpeg?q=20" alt="/" class="pic" onclick="OpenProduct15()">
+
+<img src="https://rukminim1.flixcart.com/image/750/750/jeiukcw0/sticker/j/a/t/extra-large-wall-stickers-beautiful-multicolour-bird-cage-original-imaf378fkr3yf6fq.jpeg?q=20" alt="/" class="pic" onclick="OpenProduct16()">
+
+</div>
+
+</div>
+
+<div class="sale1">
+
+    
+<img src="phone4.jpg" alt="/" class="ig" onclick="OpenProduct17()">
+
+<img src="https://rukminim1.flixcart.com/flap/360/512/image/470074a808e7a2aa.jpg?q=60" alt="/" class="ig" onclick="OpenProduct18()">
+
+</div>
+
+
+<div id="section1">
+    
+<img src="https://rukminim1.flixcart.com/flap/688/370/image/9adaa782aaf0d38e.jpg?q=90" alt="/" id="imz" onclick="OpenProduct19()">
+
+</div>
+
+
+</div>
+
+<div id="container2">
+
+<div id="top-bar1">
+
+<span class="fas fa-arrow-left" id="back" onclick="Back()"></span>
+<span id="lgn">All categories</span>
+
+</div>
+
+<img src="https://rukminim1.flixcart.com/flap/240/256/image/fe52fbba5a2db150.jpg?q=60" alt="/" class="ctg-img">
+
+<img src="https://rukminim1.flixcart.com/flap/240/256/image/d54a98827ddf70d6.jpg?q=60" alt="/" class="ctg-img">
+
+<img src="https://rukminim1.flixcart.com/flap/240/256/image/50a024fec7cd8f35.jpg?q=60" alt="/" class="ctg-img">
+<br>
+
+<img src="https://rukminim1.flixcart.com/flap/240/256/image/58d5f952abb072c7.jpg?q=60" alt="/" class="ctg-img">
+
+<img src="https://rukminim1.flixcart.com/flap/240/256/image/bf0a1bf6a861c03a.jpg?q=60" alt="/" class="ctg-img">
+
+<img src="https://rukminim1.flixcart.com/flap/240/256/image/80fd644b28d7c5f8.jpg?q=60" alt="/" class="ctg-img">
+<br>
+
+<img src="https://rukminim1.flixcart.com/flap/240/256/image/f828ddf4ddfefcd5.jpg?q=60" alt="/" class="ctg-img">
+
+<img src="https://rukminim1.flixcart.com/flap/240/256/image/8f3c604110e7b08d.jpg?q=60" alt="/" class="ctg-img">
+
+<img src="https://rukminim1.flixcart.com/flap/240/256/image/8c98db57c41db8d6.jpg?q=60" alt="/" class="ctg-img">
+<br>
+
+<img src="https://rukminim1.flixcart.com/flap/240/256/image/bf1db4005d80dd04.jpg?q=60" alt="/" class="ctg-img">
+
+<img src="https://rukminim1.flixcart.com/flap/240/256/image/f4d913d245ea647a.jpg?q=60" alt="/" class="ctg-img">
+
+<img src="https://rukminim1.flixcart.com/flap/240/256/image/ab1d086fca575ab0.jpg?q=60" alt="/" class="ctg-img">
+<br>
+
+<img src="Kenyan heritage.jpg" alt="/" class="ctg-img">
+
+<img src="https://rukminim1.flixcart.com/flap/240/256/image/2dcfcba65a83ddb7.jpg?q=60" alt="/" class="ctg-img">
+
+<img src="https://rukminim1.flixcart.com/flap/240/256/image/cf36990c67a7720f.jpg?q=60" alt="/" class="ctg-img">
+
+</div>
+
+
+
+<div id="container3">
+    
+<div id="top-bar2">
+
+<span class="fas fa-arrow-left" id="back1" onclick="Back1()"></span>
+<span id="lgn1">Essentials store</span>
+<span class="fas fa-search" id="srch"></span>
+<span class="fas fa-shopping-cart" id="kart"></span>
+
+</div>
+
+<img src="https://rukminim1.flixcart.com/flap/720/320/image/c7b3b6ee38f4fbbb.jpg?q=60" id="img-cnt3" alt="/"><br>
+
+<img src="https://rukminim1.flixcart.com/flap/144/210/image/11a90fa2eb517807.jpg?q=60" alt="/" class="cnt3-img-ctg" >
+
+<img src="https://rukminim1.flixcart.com/flap/144/210/image/118bf1c2553ff748.jpg?q=60" alt="/" class="cnt3-img-ctg" >
+
+<img src="https://rukminim1.flixcart.com/flap/144/210/image/46128e957a5d3481.jpg?q=60" alt="/" class="cnt3-img-ctg" >
+
+<img src="https://rukminim1.flixcart.com/flap/144/210/image/ebcf083b292a1cf1.jpg?q=60" alt="/" class="cnt3-img-ctg" >
+
+<img src="https://rukminim1.flixcart.com/flap/144/210/image/ffbff9596fa7e302.jpg?q=60" alt="/" class="cnt3-img-ctg" >
+
+<img src="https://rukminim1.flixcart.com/flap/144/210/image/4dcb6d2cb080f8f0.jpg?q=60" alt="/" class="cnt3-img-ctg" >
+
+<img src="https://rukminim1.flixcart.com/flap/144/210/image/62a5108fffb91c7f.jpg?q=60" alt="/" class="cnt3-img-ctg" >
+
+<img src="https://rukminim1.flixcart.com/flap/144/210/image/6392f142acff997e.jpg?q=60" alt="/" class="cnt3-img-ctg" >
+
+<img src="https://rukminim1.flixcart.com/flap/144/210/image/118e4a9e892af798.jpg?q=60" alt="/" class="cnt3-img-ctg" >
+
+<img src="https://rukminim1.flixcart.com/flap/144/210/image/e2b573076b0754c2.jpg?q=60" alt="/" class="cnt3-img-ctg" >
+
+<br>
+
+<img src="coviself.jpg" alt="/" id="cnt3-img2">
+
+<img src="https://rukminim1.flixcart.com/flap/720/144/image/451ebdde03d05204.jpg?q=60" id="cnt3-img3" alt="/">
+
+<div id="lcl-cnt">
+
+<img src="https://rukminim1.flixcart.com/flap/210/316/image/95cd94f09c6576ba.jpg?q=90" alt="/" class="cnt3-img4">
+
+<img src="https://rukminim1.flixcart.com/flap/210/316/image/89f92f8d1ab6ccce.jpg?q=90" alt="/" class="cnt3-img4">
+
+<img src="https://rukminim1.flixcart.com/flap/210/316/image/b4ed9eccdaf93227.jpg?q=90" alt="/" class="cnt3-img4">
+
+</div>
+
+
+<img src="https://rukminim1.flixcart.com/flap/720/240/image/8ebe4584178b9581.jpg?q=60" alt="/" id="cnt3-img6">
+
+<img src="https://rukminim1.flixcart.com/flap/720/144/image/557bb679a3aae6cc.jpg?q=60" alt="/" id="cnt3-img7">
+
+<div id="lcl-cnt2">
+    
+<img src="home cleaning.jpg" alt="/" class="cnt3-img8">
+
+<img src="kitchen and lighting.jpg" alt="/" class="cnt3-img8">
+
+<img src="home utility.jpg" alt="/" class="cnt3-img8">
+
+<img src="pet supplies.jpg" alt="/" class="cnt3-img8">
+
+<img src="furniture.jpg" alt="/" class="cnt3-img8">
+
+<img src="books.jpg" alt="/" class="cnt3-img8">
+
+</div>
+
+<img src="https://rukminim1.flixcart.com/flap/720/160/image/68370dcb5d916555.jpg?q=60" alt="/" id="cnt3-img9">
+
+
+
+
+
+</div>
+
+
+<div id="container4">
+    
+<div id="top-bar3">
+
+<span class="fas fa-arrow-left" id="back2" onclick="Back2()"></span>
+<span id="lgn3">Offer zone</span>
+<span class="fas fa-search" id="srch1"></span>
+<span class="fas fa-shopping-cart" id="kart1"></span>
+
+</div>
+
+<div id="section4">
+
+<p id="cnt4-txt">Best deals</p>
+<input type="button" id="btn8" value="see more">
+
+<div id="card8">
+
+<img src="https://rukminim1.flixcart.com/image/240/240/kiqbma80-0/speaker/mobile-tablet-speaker/u/s/g/bs5rm2-bk-mivi-original-imafyg8xbv9rfsnn.jpeg?q=60" alt="/" class="cnt4-img2">
+
+<img src="https://rukminim1.flixcart.com/image/240/240/kkec4280/usb-gadget/q/x/u/usb-charging-finger-touch-cigarette-lighter-essentials-4-you-original-imafzrfsh99guakv.jpeg?q=60" alt="/" class="cnt4-img2">
+
+<img src="https://rukminim1.flixcart.com/image/240/240/kmccosw0/headphone/n/9/j/hbs-730-extra-bass-sound-quality-bluetooth-headset-mannat-original-imagf8xpkfktdaut.jpeg?q=60" alt="/" class="cnt4-img2">
+
+<img src="rack.jpg" alt="/" class="cnt4-img2">    
+
+</div>
+
+</div>
+
+<img src="motorola.jpg" alt="/" class="cnt4-img4">
+
+<img src="xiomi.jpg" alt="/" class="cnt4-img5">
+
+
+</div>
+
+<div id="container5">
+   
+<div id="top-bar4">
+
+<span class="fas fa-arrow-left" id="back3" onclick="Back3()"></span>
+<span id="lgn4">Your mobile destination</span>
+<span class="fas fa-search" id="srch2"></span>
+<span class="fas fa-shopping-cart" id="kart3"></span>
+
+</div>
+
+<img src="https://rukminim1.flixcart.com/flap/720/160/image/de2f542c939ba0c9.png?q=60" id="cnt5-img1" alt="/">
+
+<img src="bestselling.jpg" id="cnt5-img2" alt="/">
+
+
+<div id="brand-sec">
+   
+<img src="https://rukminim1.flixcart.com/flap/280/220/image/d79ae939c00f44db.jpg?q=90" alt="/" class="brands">
+
+<img src="https://rukminim1.flixcart.com/flap/280/220/image/1c70bed895ad00bd.jpg?q=90" alt="/" class="brands">
+
+<img src="https://rukminim1.flixcart.com/flap/280/220/image/dc2a81730760bfc4.jpg?q=90" alt="/" class="brands">
+
+<img src="https://rukminim1.flixcart.com/flap/280/220/image/4bac742e3a06dac7.jpg?q=90" alt="/" class="brands">
+
+<img src="https://rukminim1.flixcart.com/flap/280/220/image/57e1ec62d499a431.jpg?q=90" alt="/" class="brands">
+
+<img src="https://rukminim1.flixcart.com/flap/280/220/image/6c051b48f3cea995.jpg?q=90" alt="/" class="brands">
+
+<img src="https://rukminim1.flixcart.com/flap/280/220/image/b83e9375fdbcc55b.jpg?q=90" alt="/" class="brands">
+
+<img src="https://rukminim1.flixcart.com/flap/280/220/image/8b99fe21ac423d9b.jpg?q=90" alt="/" class="brands">
+    
+</div>
+
+<img src="https://rukminim1.flixcart.com/flap/720/100/image/a2a28e926e64a976.jpg?q=60" alt="/" id="cnt5-img6">
+
+<img src="vivo.jpg" alt="/" class="anm2">
+
+<img src="xiomi.jpg" alt="/" class="anm2">
+
+<img src="motorola.jpg" alt="/" class="anm2">
+
+<img src="SAMSANG.jpg" alt="/" class="anm2">
+
+<img src="realme.jpg" alt="/" class="anm2">
+
+<img src="https://rukminim1.flixcart.com/flap/720/280/image/3e32ad86e01e812f.jpg?q=60" alt="/" id="cnt5-img8">
+
+<img src="itel.jpg" alt="/" id="cnt5-img13">
+
+<img src="re.jpg" alt="/" id="cnt5-img9">
+
+<img src="https://rukminim1.flixcart.com/flap/720/160/image/9c8d97d703ed5d18.jpg?q=60" alt="/" id="cnt5-img10">
+
+<img src="upi.jpg" alt="/" id="cnt5-img11">
+
+</div>
+
+<div id="container6">
+    
+<div id="top-bar5">
+
+<span class="fas fa-arrow-left" id="back4" onclick="Back4()"></span>
+<span id="lgn5">Sale is live</span>
+<span class="fas fa-search" id="srch3"></span>
+<span class="fas fa-shopping-cart" id="kart4"></span>
+
+</div>
+
+<img src="https://rukminim1.flixcart.com/flap/720/320/image/c57db3bb0d1cc83b.jpg?q=60" alt="/" id="cnt6-img1">
+
+<div id="cnt6-ctg">
+
+<img src="https://rukminim1.flixcart.com/flap/180/212/image/263977dcf2470999.jpg?q=60" alt="/" class="cnt6-img2">
+
+<img src="t.jpg" alt="/" class="cnt6-img2">
+
+<img src="essentials.jpg" alt="/" class="cnt6-img2">
+
+<img src="https://rukminim1.flixcart.com/flap/180/212/image/2286c41883223ffa.jpg?q=60" alt="/" class="cnt6-img2">
+
+<img src="https://rukminim1.flixcart.com/flap/180/212/image/bf4dcc941ce8bcfd.jpg?q=60" alt="/" class="cnt6-img2">
+
+<img src="https://rukminim1.flixcart.com/flap/180/212/image/ef2227e211ab0ce6.jpg?q=60" alt="/" class="cnt6-img2">
+
+<img src="https://rukminim1.flixcart.com/flap/180/212/image/29b95177e6fd6f25.jpg?q=60" alt="/" class="cnt6-img2">
+
+<img src="https://rukminim1.flixcart.com/flap/180/212/image/1cf5aa14113033c1.jpg?q=60" alt="/" class="cnt6-img2">
+
+<img src="https://rukminim1.flixcart.com/flap/180/212/image/6812450996859b15.jpg?q=60" alt="/" class="cnt6-img2">
+
+<img src="https://rukminim1.flixcart.com/flap/180/212/image/53daf6a19e0f846a.jpg?q=60" alt="/" class="cnt6-img2">
+
+<img src="https://rukminim1.flixcart.com/flap/180/212/image/daecc741111630b7.jpg?q=60" alt="/" class="cnt6-img2">
+
+<img src="https://rukminim1.flixcart.com/flap/180/212/image/2821166574d9c145.jpg?q=60" alt="/" class="cnt6-img2">
+
+</div>
+
+<img src="https://rukminim1.flixcart.com/flap/720/160/image/85cf6ac0cce37a89.jpg?q=60" id="cnt6-img3" alt="/">
+
+<img src="https://rukminim1.flixcart.com/flap/720/144/image/c9233c41d48702ba.jpg?q=60" alt="/" id="cnt6-img4">
+
+<img src="https://rukminim1.flixcart.com/flap/720/616/image/d36c1347a5dec8f9.jpg?q=90" alt="/" id="cnt6-img5">
+
+<img src="https://rukminim1.flixcart.com/flap/720/144/image/ffe2c72e43a7e3c1.jpg?q=60" alt="/" id="cnt6-img6">
+
+<div id="cnt6-ctg2">
+
+<img src="sarees.jpg" alt="/" class="cnt6-img7">
+
+<img src="tshirts.jpg" alt="/" class="cnt6-img7">
+
+<img src="https://rukminim1.flixcart.com/flap/180/240/image/e8c301ce2002765b.jpg?q=60" alt="/" class="cnt6-img7">
+
+<img src="kurtis.jpg" alt="/" class="cnt6-img7">
+
+</div>
+
+<img src="https://rukminim1.flixcart.com/flap/720/240/image/1c2e901cb42e1d40.jpg?q=60" id="cnt6-img8" alt="/">
+
+<img src="https://rukminim1.flixcart.com/flap/720/240/image/76b6fc620068f050.jpg?q=60" alt="/" id="cnt6-img9">
+
+<img src="jeans.jpg" alt="/" class="cnt6-img10">
+
+<img src="https://rukminim1.flixcart.com/flap/360/512/image/478320878ecfc62b.jpg?q=60" alt="/" class="cnt6-img10">
+
+<img src="https://rukminim1.flixcart.com/flap/720/280/image/3b0b8335de8653b9.jpg?q=60" alt="/" id="cnt6-img11">
+
+<img src="fam.jpg" alt="/" id="cnt6-img12">
+
+</div>
+
+<div id="container7">
+    
+<div id="top-bar6">
+
+<span class="fas fa-arrow-left" id="back5" onclick="Back5()"></span>
+<span id="lgn6">latest trends</span>
+<span class="fas fa-search" id="srch4"></span>
+<span class="fas fa-shopping-cart" id="kart5"></span>
+
+</div>
+
+<img src="https://rukminim1.flixcart.com/flap/720/100/image/fcf13742262e4a15.jpg?q=60" alt="/" id="cnt7-img1">
+
+<img src="https://rukminim1.flixcart.com/flap/720/160/image/6c46c96173f46f5a.jpg?q=60" alt="/" id="cnt7-img2">
+
+<div id="cnt7-ctg">
+
+<img src="https://rukminim1.flixcart.com/flap/180/240/image/dfdb6e3f84363ca8.jpg?q=60" alt="/" class="cnt7-img3">
+
+<img src="https://rukminim1.flixcart.com/flap/180/240/image/1d5ad0b60a6687d9.jpg?q=60" alt="/" class="cnt7-img3">
+
+<img src="https://rukminim1.flixcart.com/flap/180/240/image/0b5627b0db632e73.jpg?q=60" alt="/" class="cnt7-img3">
+
+<img src="https://rukminim1.flixcart.com/flap/180/240/image/abb185fb5de95515.jpg?q=60" alt="/" class="cnt7-img3">
+
+<img src="https://rukminim1.flixcart.com/flap/180/240/image/e9a37acc2ca98c87.jpg?q=60" alt="/" class="cnt7-img3">
+
+<img src="https://rukminim1.flixcart.com/flap/180/240/image/5574120ae8d68f80.jpg?q=60" alt="/" class="cnt7-img3">
+
+<img src="https://rukminim1.flixcart.com/flap/180/240/image/2dc908fbfa63b35a.jpg?q=60" alt="/" class="cnt7-img3">
+
+<img src="https://rukminim1.flixcart.com/flap/180/240/image/b8f94bb2831bcf6d.jpg?q=60" alt="/" class="cnt7-img3">
+
+</div>
+
+<img src="https://rukminim1.flixcart.com/flap/720/100/image/1b9fa597b52378c1.jpg?q=60" alt="/" id="cnt7-img4">
+
+<img src="https://rukminim1.flixcart.com/flap/720/240/image/f94654c37451fc81.jpg?q=60" alt="/" id="cnt7-img5">
+
+<img src="beautiful.jpg" alt="/" id="cnt7-img6">
+
+<img src="https://rukminim1.flixcart.com/flap/720/320/image/4888dde4ff1ec1b9.jpg?q=60" alt="/" id="cnt7-img7">
+
+<img src="supercoin.jpg" alt="/" id="cnt7-img8">
+
+<div id="cnt7-sec">
+
+<img src="containers.jpg" alt="" class="cnt7-img9">
+
+<img src="hotpot.jpg" alt="" class="cnt7-img9">
+
+<img src="kitchen.jpg" alt="" class="cnt7-img9">
+
+<img src="cooker.jpg" alt="" class="cnt7-img9">
+
+<img src="https://rukminim1.flixcart.com/flap/240/256/image/bdd8fbe49e8b0b7f.jpg?q=60" alt="" class="cnt7-img9">
+
+<img src="girl .jpg" alt="/" class="cnt7-img9">
+
+</div>
+
+<img src="kitchen tools.jpg" alt="/" class="cnt7-img10">
+
+</div>
+
+<div id="container8">
+    
+<div id="top-bar7">
+
+<span class="fas fa-arrow-left" id="back6" onclick="Back6()"></span>
+<span id="lgn7">Gift card store</span>
+<span class="fas fa-search" id="srch5"></span>
+<span class="fas fa-shopping-cart" id="kart6"></span>
+
+</div>
+
+<img src="https://rukminim1.flixcart.com/flap/720/320/image/485d3632671092e6.jpg?q=60" alt="/" id="cnt8-img1">
+
+<img src="https://rukminim1.flixcart.com/flap/720/100/image/7f6cd5e75a25150e.jpg?q=60" alt="/" id="cnt8-img2">
+
+<div id="cnt8-ctg">
+
+<img src="https://rukminim1.flixcart.com/flap/360/150/image/be4b7b99da9329a6.jpg?q=60" alt="/" id="cnt8-img3">
+
+<img src="https://rukminim1.flixcart.com/flap/360/150/image/c372e4ae9a75eb02.jpg?q=60" alt="/" id="cnt8-img3">
+
+<img src="https://rukminim1.flixcart.com/flap/360/150/image/8eee1e408937c6b2.jpg?q=60" alt="/" id="cnt8-img3">
+
+<img src="https://rukminim1.flixcart.com/flap/360/150/image/c516f0e94399fd7f.jpg?q=60" alt="/" id="cnt8-img3">
+
+</div>
+
+<img src="https://rukminim1.flixcart.com/flap/720/144/image/c1c6bc4c9e0b6421.jpg?q=60" id="cnt8-img4" alt="/">
+
+<div id="cnt8-ctg1">
+
+<img src="https://rukminim1.flixcart.com/flap/180/240/image/3fd92ca9bf8c3a48.jpg?q=60" alt="/" class="cnt8-img5">
+
+<img src="https://rukminim1.flixcart.com/flap/180/240/image/4cdf05d2f336946d.jpg?q=60" alt="/" class="cnt8-img5">
+
+<img src="https://rukminim1.flixcart.com/flap/180/240/image/39bdc51cc591a15e.jpg?q=60" alt="/" class="cnt8-img5">
+
+<img src="https://rukminim1.flixcart.com/flap/180/240/image/f71515d9b8874af7.jpg?q=60" alt="/" class="cnt8-img5">
+
+</div>
+
+<img src="https://rukminim1.flixcart.com/flap/720/320/image/ae2f62ae967e4d93.jpg?q=60" alt="/" id="cnt8-img6">
+
+<img src="https://rukminim1.flixcart.com/flap/720/280/image/36241b7874e1c960.jpg?q=60" alt="/" id="cnt8-img7">
+
+<img src="https://rukminim1.flixcart.com/flap/720/144/image/ca45adf934e1e338.jpg?q=60" alt="/" id="cnt8-img8">
+
+</div>
+
+
+<div id="cart">
+    
+<div id="top-bar8">
+
+<span class="fas fa-arrow-left" id="back7" onclick="Back7()"></span>
+<span id="lgn8">My cart</span>
+
+</div>
+
+<div id="adress">
+
+<span id="adr">Deliver to </span>
+<strong id="addr">Your home</strong>
+<input type="button" onclick="ChangeAdress()" id="adr-btn" value="Change">
+</div>
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvZ0KQXAP6h9Tgfqv7rrfM8LL-ZJABp87f0A&usqp=CAU" alt="/" id="empty">
+
+<h2 id="alrt">your cart is empty</h2>
+
+<input value="add items" type="button" onclick="Back7()" id="home">
+</div>
+
+
+<div id="container9">
+    
+<div id="top-bar8">
+
+<span class="fas fa-arrow-left back7" onclick="Back8()"></span>
+<img src="PriceAware.png" alt="/" class="logo">
+<span class="fas fa-search srch7"></span>
+<span class="fas fa-shopping-cart kart8"></span>
+
+</div>
+
+<div class="img-card">
+
+<img src="https://rukminim1.flixcart.com/image/750/750/kjswia80/fairness/k/f/h/30-skin-illuminate-vitamin-c-serum-for-radiant-skin-with-high-original-imafza5bqhnehf4b.jpeg?q=20" alt="/" class="product-img">
+<br>
+
+<span class="details"> Quantity: </span>
+<strong class="details"> 30 g </strong>
+
+</div>
+
+<div class="price-card">
+    
+<span class="product-price"><b> Ksh.500 </b></span>
+<span class="product-price2"><del> ksh.599 </del></span>
+<span class="product-percent"> 15% off </span>
+<br>
+<img src="logo.png" alt="/" class="fassured">
+<span class="delivery">Free delivery</span>
+<br>
+<span class="product-brand">mamaEarth</span>
+<br>
+<span class="product-desc">skin illuminate vitamin C serum for radient skin with high potency Vitamin C turmeric 30 g </span>
+<br>
+
+<div class="rating-bar">
+
+<span class="rating">4.6</span>
+<span class="fas fa-star star"></span>
+
+</div>
+
+<span class="rating-no">26,674 ratings</span>
+
+</div>
+
+<div class="avl-offr">
+    
+<span class="ofr-avl"> Available Offers</span>
+<br>
+<strong class="ofr-type"> Bank offer </strong> <span class="ofr-name"> 5% Unlimited cashback on flipkart Axis Bank credit card</span>
+<br><br>
+<strong class="ofr-type"> limited time offer </strong> <span class="ofr-name"> Get up to ksh. 500 cashback on payments above ksh.600 from Google pay</span>
+<br><br>
+<strong class="ofr-type"> partner offer </strong> <span class="ofr-name"> Buy 5 items together for extra 10% discount</span>
+
+
+</div>
+
+<div class="nothing"></div>
+
+<div class="order-cart-btn">
+    
+<input type="button" onclick="AddToCart()" class="add-cart" value="add to cart">
+
+<input type="button" onclick="Order()" class="place-order" value="Buy Now">
+
+
+</div>
+
+
+
+
+
+
+
+</div>
+
+
+<div id="container10">
+    
+<div class="top-bar9">
+
+<span class="fas fa-arrow-left back7" onclick="Back9()"></span>
+<img src="PriceAware.png" alt="/" class="logo">
+<span class="fas fa-search srch7"></span>
+<span class="fas fa-shopping-cart kart8"></span>
+
+</div>
+
+<div class="img-card">
+
+<img src="https://rukminim1.flixcart.com/image/750/900/kg9qbgw0-0/shoe/a/n/b/380815-puma-dark-shadow-limepunch-original-imafwgy4rbfuh5ew.jpeg?q=20" alt="/" class="product-img">
+<br>
+
+<span class="details"> Quantity: </span>
+<strong class="details"> 2 </strong>
+
+</div>
+
+<div class="price-card">
+    
+<span class="product-price"><b> Ksh 1799 </b></span>
+<span class="product-price2"><del> Ksh 2199 </del></span>
+<span class="product-percent"> 13% off </span>
+<br>
+<img src="logo.png" alt="/" class="fassured">
+<span class="delivery">Free delivery</span>
+<br>
+<span class="product-brand">PUMA</span>
+<br>
+<span class="product-desc"> Exta comfortable shoe for men for running playing purpose </span>
+<br>
+
+<div class="rating-bar">
+
+<span class="rating">4.9</span>
+<span class="fas fa-star star"></span>
+
+</div>
+
+<span class="rating-no">1,48,391 ratings</span>
+
+</div>
+
+<div class="avl-offr">
+    
+<span class="ofr-avl"> Available Offers</span>
+<br>
+<strong class="ofr-type"> Special offer </strong> <span class="ofr-name"> Extra 95% off for priceware users </span>
+<br><br>
+<strong class="ofr-type"> Bank offer </strong> <span class="ofr-name"> Get upto ksh. 9999 off on Fastercard 1st transaction </span>
+<br><br>
+<strong class="ofr-type"> Company offer </strong> <span class="ofr-name"> get up to ksh. 1000 off on buying 5 product of this brand </span>
+
+</div>
+
+<div class="nothing"></div>
+
+<div class="order-cart-btn">
+    
+<input type="button" onclick="AddToCart()" class="add-cart" value="add to cart">
+
+<input type="button" onclick="Order()" class="place-order" value="Buy Now">
+
+
+</div>
+
+
+
+
+
+
+
+</div>
+
+<div id="container11">
+    
+<div class="top-bar9">
+
+<span class="fas fa-arrow-left back7" onclick="Back10()"></span>
+<img src="PriceAware.png" alt="/" class="logo">
+<span class="fas fa-search srch7"></span>
+<span class="fas fa-shopping-cart kart8"></span>
+
+</div>
+
+<div class="img-card">
+
+<img src="https://rukminim1.flixcart.com/image/750/900/j9338nk0/jewellery-set/4/f/f/c401-atasi-international-original-imaew2nrvqgzwnvv.jpeg?q=20" alt="/" class="product-img">
+<br>
+
+<span class="details"> Quantity: </span>
+<strong class="details"> 1 </strong>
+
+</div>
+
+<div class="price-card">
+    
+<span class="product-price"><b> ksh. 9999 </b></span>
+<span class="product-price2"><del> ksh.29999 </del></span>
+<span class="product-percent"> 33% off </span>
+<br>
+<img src="logo.png" alt="/" class="fassured">
+<span class="delivery"> ksh. 500 delivery charges</span>
+<br>
+<span class="product-brand">Atasi international</span>
+<br>
+<span class="product-desc"> alloy Gold-plated and diamond jewel set (golden, white)</span>
+<br>
+
+<div class="rating-bar">
+
+<span class="rating">5.0</span>
+<span class="fas fa-star star"></span>
+
+</div>
+
+<span class="rating-no">17,462 ratings</span>
+
+</div>
+
+<div class="avl-offr">
+    
+<span class="ofr-avl"> Available Offers</span>
+<br>
+<strong class="ofr-type"> limited time offer </strong> <span class="ofr-name"> Buy 1 and get 15 same jewellery for free </span>
+<br><br>
+<strong class="ofr-type"> buy more save more </strong> <span class="ofr-name"> buy 5 flipkart assured items and get 10% off </span>
+<br><br>
+<strong class="ofr-type"> special offer </strong> <span class="ofr-name"> Free for first 10 users and 85% off for next 10 users </span>
+
+</div>
+
+<div class="nothing"></div>
+
+<div class="order-cart-btn">
+    
+<input type="button" onclick="AddToCart()" class="add-cart" value="add to cart">
+
+<input type="button" onclick="Order()" class="place-order" value="Buy Now">
+
+
+</div>
+
+
+</div>
+
+<div id="container12">
+    
+<div class="top-bar9">
+
+<span class="fas fa-arrow-left back7" onclick="Back11()"></span>
+<img src="PriceAware.png" alt="/" class="logo">
+<span class="fas fa-search srch7"></span>
+<span class="fas fa-shopping-cart kart8"></span>
+
+</div>
+
+<div class="img-card">
+
+<img src="https://rukminim1.flixcart.com/image/750/900/k6mibgw0/kids-dress/d/5/4/10-11-years-blueribjacket-ftc-fashions-original-imafz5g6mffxnkd9.jpeg?q=20" alt="/" class="product-img" id="product-image1">
+<br>
+
+<span class="details"> Color: </span>
+<strong class="details"> black, navy blue </strong>
+
+</div>
+
+<div class="price-card">
+    
+<span class="product-price"><b> ksh. 340 </b></span>
+<span class="product-price2"><del> ksh. 999 </del></span>
+<span class="product-percent"> 65% off </span>
+<br>
+<img src="logo.png" alt="/" class="fassured">
+<span class="delivery"> Free delivery charges</span>
+<br>
+<span class="product-brand">Miss & chief</span>
+<br>
+<span class="product-desc"> Girl's beautiful partywear, wedding, casual wear dress (navy blue) </span>
+<br>
+
+<div class="rating-bar">
+
+<span class="rating">2.9</span>
+<span class="fas fa-star star"></span>
+
+</div>
+
+<span class="rating-no">9,451 ratings</span>
+
+</div>
+
+<div class="avl-offr">
+    
+<span class="ofr-avl"> Available Offers</span>
+<br>
+<strong class="ofr-type"> Bank offer </strong> <span class="ofr-name"> Get upto Ksh 500 off on paying from XDXDpay upi </span>
+<br><br>
+<strong class="ofr-type"> buy more save more </strong> <span class="ofr-name"> buy 5 flipkart assured items and get 10% off </span>
+<br><br>
+<strong class="ofr-type"> special offer </strong> <span class="ofr-name"> exta 50% off on  paying from coop card </span>
+
+</div>
+
+<div class="nothing"></div>
+
+<div class="order-cart-btn">
+    
+<input type="button" onclick="AddToCart()" class="add-cart" value="add to cart">
+
+<input type="button" onclick="Order()" class="place-order" value="Buy Now">
+
+
+</div>
+
+
+</div>
+
+<div id="container13">
+    
+<div class="top-bar9">
+
+<span class="fas fa-arrow-left back7" onclick="Back12()"></span>
+<img src="PriceAware.png" alt="/" class="logo">
+<span class="fas fa-search srch7"></span>
+<span class="fas fa-shopping-cart kart8"></span>
+
+</div>
+
+<div class="img-card">
+
+<img src="Emoji.jpg" alt="/" class="product-img">
+<br>
+
+<span class="details"> Color: </span>
+<strong class="details"> yellow </strong>
+
+</div>
+
+<div class="price-card">
+    
+<span class="product-price"><b> ksh. 499 </b></span>
+<span class="product-price2"><del> ksh. 999 </del></span>
+<span class="product-percent"> 50% off </span>
+<br>
+<img src="https://i.ibb.co/VBy4jHS/68264-fl-png.jpg" alt="/" class="fassured">
+<span class="delivery"> ksh. 10 delivery charges</span>
+<br>
+<span class="product-brand"> Kallu pillow maker </span>
+<br>
+<span class="product-desc"> Beautiful emoji pillow for kids (quantity 5)</span>
+<br>
+
+<div class="rating-bar">
+
+<span class="rating">4.9</span>
+<span class="fas fa-star star"></span>
+
+</div>
+
+<span class="rating-no">79,120 ratings</span>
+
+</div>
+
+<div class="avl-offr">
+    
+<span class="ofr-avl"> Available Offers</span>
+<br>
+<strong class="ofr-type"> limited time offer </strong> <span class="ofr-name"> Buy 1 and get 5 same pillows for free </span>
+<br><br>
+<strong class="ofr-type"> buy more save more </strong> <span class="ofr-name"> buy 5 flipkart assured items and get 10% off </span>
+<br><br>
+<strong class="ofr-type"> Bank offer </strong> <span class="ofr-name"> upto 90% off from XDXD bank </span>
+
+</div>
+
+<div class="nothing"></div>
+
+<div class="order-cart-btn">
+    
+<input type="button" onclick="AddToCart()" class="add-cart" value="add to cart">
+
+<input type="button" onclick="Order()" class="place-order" value="Buy Now">
+
+
+</div>
+
+
+</div>
+
+<div id="container14">
+    
+<div class="top-bar9">
+
+<span class="fas fa-arrow-left back7" onclick="Back13()"></span>
+<img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/logo_lite-cbb357.png" alt="/" class="logo">
+<span class="fas fa-search srch7"></span>
+<span class="fas fa-shopping-cart kart8"></span>
+
+</div>
+
+<div class="img-card">
+
+<img src="https://rukminim1.flixcart.com/image/750/900/kfoapow0-0/jean/x/g/n/34-000895-highlander-original-imafw2hyehddrwhs.jpeg?q=20" alt="/" class="product-img">
+<br>
+
+<span class="details"> Color: </span>
+<strong class="details"> gray </strong>
+
+</div>
+
+<div class="price-card">
+    
+<span class="product-price"><b> ksh. 899 </b></span>
+<span class="product-price2"><del> ksh. 1799 </del></span>
+<span class="product-percent"> 30% off </span>
+<br>
+<img src="https://i.ibb.co/VBy4jHS/68264-fl-png.jpg" alt="/" class="fassured">
+<span class="delivery"> free delivery </span>
+<br>
+<span class="product-brand">Vanhusen</span>
+<br>
+<span class="product-desc"> Ultra comfortable exclusive gray color jeans for men (XXL)</span>
+<br>
+
+<div class="rating-bar">
+
+<span class="rating">5.0</span>
+<span class="fas fa-star star"></span>
+
+</div>
+
+<span class="rating-no">6,57,749 ratings</span>
+
+</div>
+
+<div class="avl-offr">
+    
+<span class="ofr-avl"> Available Offers</span>
+<br>
+<strong class="ofr-type"> limited time offer </strong> <span class="ofr-name"> Buy 1 and get 5 same items for free </span>
+<br><br>
+<strong class="ofr-type"> buy more save more </strong> <span class="ofr-name"> buy 5 flipkart assured items and get 10% off </span>
+<br><br>
+<strong class="ofr-type"> Bank offer </strong> <span class="ofr-name"> get this product for free from paying from Cooperative bank </span>
+
+</div>
+
+<div class="nothing"></div>
+
+<div class="order-cart-btn">
+    
+<input type="button" onclick="AddToCart()" class="add-cart" value="add to cart">
+
+<input type="button" onclick="Order()" class="place-order" value="Buy Now">
+
+
+</div>
+
+
+</div>
+
+<div id="container15">
+    
+<div class="top-bar9">
+
+<span class="fas fa-arrow-left back7" onclick="Back14()"></span>
+<img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/logo_lite-cbb357.png" alt="/" class="logo">
+<span class="fas fa-search srch7"></span>
+<span class="fas fa-shopping-cart kart8"></span>
+
+</div>
+
+<div class="img-card">
+
+<img src="https://rukminim1.flixcart.com/image/750/750/kq18n0w0/mobile/y/2/b/narzo-30-rmx2156-realme-original-imag45yhzhugdcqh.jpeg?q=20" alt="/" class="product-img" id="product-img2">
+<br>
+
+<span class="details"> Model: </span>
+<strong class="details"> Racing blue </strong>
+
+</div>
+
+<div class="price-card">
+    
+<span class="product-price"><b> ksh. 12,499 </b></span>
+<span class="product-price2"><del> ksh. 14,999 </del></span>
+<span class="product-percent"> 16% off </span>
+<br>
+<img src="https://i.ibb.co/VBy4jHS/68264-fl-png.jpg" alt="/" class="fassured">
+<span class="delivery"> free delivery </span>
+<br>
+<span class="product-brand">REALME</span>
+<br>
+<span class="product-desc"> Realme Narzo 30 (Racing blue) (4gb ram) </span>
+<br>
+
+<div class="rating-bar">
+
+<span class="rating">5.0</span>
+<span class="fas fa-star star"></span>
+
+</div>
+
+<span class="rating-no">11,52,709 ratings</span>
+
+</div>
+
+<div class="avl-offr">
+    
+<span class="ofr-avl"> Available Offers</span>
+<br>
+<strong class="ofr-type"> Bank offer </strong> <span class="ofr-name"> Get upto 40% off from soloXD Bank </span>
+<br><br>
+<strong class="ofr-type"> buy more save more </strong> <span class="ofr-name"> buy 5 flipkart assured items and get 10% off </span>
+<br><br>
+<strong class="ofr-type"> Bank offer </strong> <span class="ofr-name"> get this product for free from paying from Cooperative bank </span>
+
+</div>
+
+<div class="nothing"></div>
+
+<div class="order-cart-btn">
+    
+<input type="button" onclick="AddToCart()" class="add-cart" value="add to cart">
+
+<input type="button" onclick="Order()" class="place-order" value="Buy Now">
+
+
+</div>
+
+
+</div>
+
+<div id="container16">
+    
+<div class="top-bar9">
+
+<span class="fas fa-arrow-left back7" onclick="Back15()"></span>
+<img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/logo_lite-cbb357.png" alt="/" class="logo">
+<span class="fas fa-search srch7"></span>
+<span class="fas fa-shopping-cart kart8"></span>
+
+</div>
+
+<div class="img-card">
+
+<img src="https://rukminim1.flixcart.com/image/750/900/kit6hzk0-0/shoe/y/9/k/ew2529-10-adidas-cblack-ftwwht-ftwwht-original-imafygtff9y8y7gd.jpeg?q=20" alt="/" class="product-img">
+<br>
+
+<span class="details"> Color: </span>
+<strong class="details"> black & white </strong>
+
+</div>
+
+<div class="price-card">
+    
+<span class="product-price"><b> ksh. 1499 </b></span>
+<span class="product-price2"><del> ksh. 3599 </del></span>
+<span class="product-percent"> 65% off </span>
+<br>
+<img src="https://i.ibb.co/VBy4jHS/68264-fl-png.jpg" alt="/" class="fassured">
+<span class="delivery"> free delivery </span>
+<br>
+<span class="product-brand">ADIDAS</span>
+<br>
+<span class="product-desc"> Adidas M running shoes for men (black) </span>
+<br>
+
+<div class="rating-bar">
+
+<span class="rating">4.6</span>
+<span class="fas fa-star star"></span>
+
+</div>
+
+<span class="rating-no">3,07,319 ratings</span>
+
+</div>
+
+<div class="avl-offr">
+    
+<span class="ofr-avl"> Available Offers</span>
+<br>
+<strong class="ofr-type"> limited time offer </strong> <span class="ofr-name"> Buy 1 shoe and get 2 pairs extra </span>
+<br><br>
+<strong class="ofr-type"> buy more save more </strong> <span class="ofr-name"> buy 5 flipkart assured items and get 10% off </span>
+<br><br>
+<strong class="ofr-type"> Bank offer </strong> <span class="ofr-name"> get this product for free from paying from Cooperative bank </span>
+
+</div>
+
+<div class="nothing"></div>
+
+<div class="order-cart-btn">
+    
+<input type="button" onclick="AddToCart()" class="add-cart" value="add to cart">
+
+<input type="button" onclick="Order()" class="place-order" value="Buy Now">
+
+
+</div>
+
+
+</div>
+
+<div id="container17">
+    
+<div class="top-bar9">
+
+<span class="fas fa-arrow-left back7" onclick="Back16()"></span>
+<img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/logo_lite-cbb357.png" alt="/" class="logo">
+<span class="fas fa-search srch7"></span>
+<span class="fas fa-shopping-cart kart8"></span>
+
+</div>
+
+<div class="img-card">
+
+<img src="https://rukminim1.flixcart.com/image/750/900/k70spzk0/shirt/n/p/d/m-hlsh010269-highlander-original-imafpchwh5zpdae2.jpeg?q=20" alt="/" class="product-img" id="product-img3">
+<br>
+
+<span class="details"> Color: </span>
+<strong class="details"> white </strong>
+
+</div>
+
+<div class="price-card">
+    
+<span class="product-price"><b> ksh. 487 </b></span>
+<span class="product-price2"><del> ksh. 1249 </del></span>
+<span class="product-percent">61 % off </span>
+<br>
+<img src="https://i.ibb.co/VBy4jHS/68264-fl-png.jpg" alt="/" class="fassured">
+<span class="delivery"> free delivery </span>
+<br>
+<span class="product-brand">HIGHLANDER</span>
+<br>
+<span class="product-desc"> Exclusive white color pure cotton t-shirt for men </span>
+<br>
+
+<div class="rating-bar">
+
+<span class="rating">4.2</span>
+<span class="fas fa-star star"></span>
+
+</div>
+
+<span class="rating-no">78,131 ratings</span>
+
+</div>
+
+<div class="avl-offr">
+    
+<span class="ofr-avl"> Available Offers</span>
+<br>
+<strong class="ofr-type"> limited time offer </strong> <span class="ofr-name"> Buy 1 and get nothing for free </span>
+<br><br>
+<strong class="ofr-type"> buy more save more </strong> <span class="ofr-name"> buy 5 flipkart assured items and get 10% off </span>
+<br><br>
+<strong class="ofr-type"> Bank offer </strong> <span class="ofr-name"> get this product for free from paying from Cooperative bank </span>
+
+</div>
+
+<div class="nothing"></div>
+
+<div class="order-cart-btn">
+    
+<input type="button" onclick="AddToCart()" class="add-cart" value="add to cart">
+
+<input type="button" onclick="Order()" class="place-order" value="Buy Now">
+
+
+</div>
+
+
+</div>
+
+<div id="container18">
+    
+<div class="top-bar9">
+
+<span class="fas fa-arrow-left back7" onclick="Back17()"></span>
+<img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/logo_lite-cbb357.png" alt="/" class="logo">
+<span class="fas fa-search srch7"></span>
+<span class="fas fa-shopping-cart kart8"></span>
+
+</div>
+
+<div class="img-card">
+
+<img src="https://rukminim1.flixcart.com/image/750/750/kn22m4w0/mobile/9/k/s/galaxy-f12-sm-f127glbiins-samsung-original-imagftmhhhvghq7w.jpeg?q=20" alt="/" class="product-img" id="product-img4">
+<br>
+
+<span class="details"> Color: </span>
+<strong class="details"> blue </strong>
+
+</div>
+
+<div class="price-card">
+    
+<span class="product-price"><b> ksh. 10,999 </b></span>
+<span class="product-price2"><del> ksh. 12,999 </del></span>
+<span class="product-percent"> 13% off </span>
+<br>
+<img src="https://i.ibb.co/VBy4jHS/68264-fl-png.jpg" alt="/" class="fassured">
+<span class="delivery"> free delivery </span>
+<br>
+<span class="product-brand">SAMSUNG</span>
+<br>
+<span class="product-desc"> SAMSUNG galaxy F12 (skyblue) (4gb, 64gb) </span>
+<br>
+
+<div class="rating-bar">
+
+<span class="rating">4.6</span>
+<span class="fas fa-star star"></span>
+
+</div>
+
+<span class="rating-no">7,78,131 ratings</span>
+
+</div>
+
+<div class="avl-offr">
+    
+<span class="ofr-avl"> Available Offers</span>
+<br>
+<strong class="ofr-type"> limited time offer </strong> <span class="ofr-name"> Buy 1 and get 1 for free </span>
+<br><br>
+<strong class="ofr-type"> buy more save more </strong> <span class="ofr-name"> buy 5 flipkart assured items and get 10% off </span>
+<br><br>
+<strong class="ofr-type"> Bank offer </strong> <span class="ofr-name"> get this product for free from paying from Cooperative bank </span>
+
+</div>
+
+<div class="nothing"></div>
+
+<div class="order-cart-btn">
+    
+<input type="button" onclick="AddToCart()" class="add-cart" value="add to cart">
+
+<input type="button" onclick="Order()" class="place-order" value="Buy Now">
+
+
+</div>
+
+
+</div>
+
+<div id="container19">
+    
+<div class="top-bar9">
+
+<span class="fas fa-arrow-left back7" onclick="Back18()"></span>
+<img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/logo_lite-cbb357.png" alt="/" class="logo">
+<span class="fas fa-search srch7"></span>
+<span class="fas fa-shopping-cart kart8"></span>
+
+</div>
+
+<div class="img-card">
+
+<img src="https://rukminim1.flixcart.com/image/750/750/kn22m4w0/mobile/9/k/s/galaxy-f12-sm-f127glbiins-samsung-original-imagftmhhhvghq7w.jpeg?q=20" alt="/" class="product-img" id="product-img4">
+<br>
+
+<span class="details"> Color: </span>
+<strong class="details"> blue </strong>
+
+</div>
+
+<div class="price-card">
+    
+<span class="product-price"><b> ksh.10,999 </b></span>
+<span class="product-price2"><del> ksh. 12,999 </del></span>
+<span class="product-percent"> 13% off </span>
+<br>
+<img src="https://i.ibb.co/VBy4jHS/68264-fl-png.jpg" alt="/" class="fassured">
+<span class="delivery"> free delivery </span>
+<br>
+<span class="product-brand">SAMSUNG</span>
+<br>
+<span class="product-desc"> SAMSUNG galaxy F12 (skyblue) (4gb, 64gb) </span>
+<br>
+
+<div class="rating-bar">
+
+<span class="rating">4.6</span>
+<span class="fas fa-star star"></span>
+
+</div>
+
+<span class="rating-no">7,78,131 ratings</span>
+
+</div>
+
+<div class="avl-offr">
+    
+<span class="ofr-avl"> Available Offers</span>
+<br>
+<strong class="ofr-type"> limited time offer </strong> <span class="ofr-name"> Buy 1 and get 1 for free </span>
+<br><br>
+<strong class="ofr-type"> buy more save more </strong> <span class="ofr-name"> buy 5 flipkart assured items and get 10% off </span>
+<br><br>
+<strong class="ofr-type"> Bank offer </strong> <span class="ofr-name"> get this product for free from paying from mcoop bank </span>
+
+</div>
+
+<div class="nothing"></div>
+
+<div class="order-cart-btn">
+    
+<input type="button" onclick="AddToCart()" class="add-cart" value="add to cart">
+
+<input type="button" onclick="Order()" class="place-order" value="Buy Now">
+
+
+</div>
+
+
+</div>
+
+<div id="container20">
+    
+<div class="top-bar9">
+
+<span class="fas fa-arrow-left back7" onclick="Back19()"></span>
+<img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/logo_lite-cbb357.png" alt="/" class="logo">
+<span class="fas fa-search srch7"></span>
+<span class="fas fa-shopping-cart kart8"></span>
+
+</div>
+
+<div class="img-card">
+
+<img src="https://rukminim1.flixcart.com/image/750/750/ke0a7ww0/stuffed-toy/v/v/w/soft-and-cute-blue-color-teddy-bear-6-feet-for-boys-and-girls-original-imafus5rgawxbhbr.jpeg?q=20" alt="/" class="product-img">
+<br>
+
+<span class="details"> Color: </span>
+<strong class="details"> Skyblue </strong>
+
+</div>
+
+<div class="price-card">
+    
+<span class="product-price"><b> ksh. 419 </b></span>
+<span class="product-price2"><del> ksh. 1,599 </del></span>
+<span class="product-percent"> 73% off </span>
+<br>
+<img src="https://i.ibb.co/VBy4jHS/68264-fl-png.jpg" alt="/" class="fassured">
+<span class="delivery"> free delivery </span>
+<br>
+<span class="product-brand">Kallu teddy wala</span>
+<br>
+<span class="product-desc"> 3 feet large stuffed teddy bear for kids (95cm) </span>
+<br>
+
+<div class="rating-bar">
+
+<span class="rating">4.1</span>
+<span class="fas fa-star star"></span>
+
+</div>
+
+<span class="rating-no">8,741 ratings</span>
+
+</div>
+
+<div class="avl-offr">
+    
+<span class="ofr-avl"> Available Offers</span>
+<br>
+<strong class="ofr-type"> limited time offer </strong> <span class="ofr-name"> Buy 1 and get 1 for free </span>
+<br><br>
+<strong class="ofr-type"> buy more save more </strong> <span class="ofr-name"> buy 5 flipkart assured items and get 10% off </span>
+<br><br>
+<strong class="ofr-type"> Bank offer </strong> <span class="ofr-name"> get this product for free from paying from cooperative bank </span>
+
+</div>
+
+<div class="nothing"></div>
+
+<div class="order-cart-btn">
+    
+<input type="button" onclick="AddToCart()" class="add-cart" value="add to cart">
+
+<input type="button" onclick="Order()" class="place-order" value="Buy Now">
+
+
+</div>
+
+
+</div>
+
+
+
+<div id="container21">
+    
+<div class="top-bar9">
+
+<span class="fas fa-arrow-left back7" onclick="Back20()"></span>
+<img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/logo_lite-cbb357.png" alt="/" class="logo">
+<span class="fas fa-search srch7"></span>
+<span class="fas fa-shopping-cart kart8"></span>
+
+</div>
+
+<div class="img-card">
+
+<img src="https://rukminim1.flixcart.com/image/750/900/k7nnrm80/earring/f/n/t/cmb291-10868-10869-shining-diva-original-imafpujqf3ygukbf.jpeg?q=20" alt="/" class="product-img">
+<br>
+
+<span class="details"> Quantity: </span>
+<strong class="details"> 7</strong>
+
+</div>
+
+<div class="price-card">
+    
+<span class="product-price"><b> ksh 399 </b></span>
+<span class="product-price2"><del> ksh 799 </del></span>
+<span class="product-percent"> 50% off </span>
+<br>
+<img src="https://i.ibb.co/VBy4jHS/68264-fl-png.jpg" alt="/" class="fassured">
+<span class="delivery"> free delivery </span>
+<br>
+<span class="product-brand">kallu jewellery wala</span>
+<br>
+<span class="product-desc"> 24 pairs combo jewellery set latest style crystal pearl earring </span>
+<br>
+
+<div class="rating-bar">
+
+<span class="rating">3.6</span>
+<span class="fas fa-star star"></span>
+
+</div>
+
+<span class="rating-no">8,861 ratings</span>
+
+</div>
+
+<div class="avl-offr">
+    
+<span class="ofr-avl"> Available Offers</span>
+<br>
+<strong class="ofr-type"> limited time offer </strong> <span class="ofr-name"> Buy 1 and get 1 for free </span>
+<br><br>
+<strong class="ofr-type"> buy more save more </strong> <span class="ofr-name"> buy 5 flipkart assured items and get 10% off </span>
+<br><br>
+<strong class="ofr-type"> Bank offer </strong> <span class="ofr-name"> get this product for free from paying from XDXD bank </span>
+
+</div>
+
+<div class="nothing"></div>
+
+<div class="order-cart-btn">
+    
+<input type="button" onclick="AddToCart()" class="add-cart" value="add to cart">
+
+<input type="button" onclick="Order()" class="place-order" value="Buy Now">
+
+
+</div>
+
+
+</div>
+
+<div id="container22">
+    
+<div class="top-bar9">
+
+<span class="fas fa-arrow-left back7" onclick="Back21()"></span>
+<img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/logo_lite-cbb357.png" alt="/" class="logo">
+<span class="fas fa-search srch7"></span>
+<span class="fas fa-shopping-cart kart8"></span>
+
+</div>
+
+<div class="img-card">
+
+<img src="https://rukminim1.flixcart.com/image/750/900/k3uhhu80/jewellery-set/j/f/a/136-r-a-enterprises-original-imafh4etpv6a2ktg.jpeg?q=20" alt="/" class="product-img">
+<br>
+
+<span class="details"> Quantity: </span>
+<strong class="details"> 1</strong>
+
+</div>
+
+<div class="price-card">
+    
+<span class="product-price"><b> ksh. 1999 </b></span>
+<span class="product-price2"><del> ksh. 4999 </del></span>
+<span class="product-percent"> 60% off </span>
+<br>
+<img src="https://i.ibb.co/VBy4jHS/68264-fl-png.jpg" alt="/" class="fassured">
+<span class="delivery"> ksh. 400 delivery fee </span>
+<br>
+<span class="product-brand">kallu jewellery wala</span>
+<br>
+<span class="product-desc"> 24 pairs combo jewellery set latest style crystal pearl earring </span>
+<br>
+
+<div class="rating-bar">
+
+<span class="rating">3.9</span>
+<span class="fas fa-star star"></span>
+
+</div>
+
+<span class="rating-no">38,406 ratings</span>
+
+</div>
+
+<div class="avl-offr">
+    
+<span class="ofr-avl"> Available Offers</span>
+<br>
+<strong class="ofr-type"> limited time offer </strong> <span class="ofr-name"> Buy 1 and get 1 for free </span>
+<br><br>
+<strong class="ofr-type"> buy more save more </strong> <span class="ofr-name"> buy 5 flipkart assured items and get 10% off </span>
+<br><br>
+<strong class="ofr-type"> Bank offer </strong> <span class="ofr-name"> get this product for free from paying from cooperative bank </span>
+
+</div>
+
+<div class="nothing"></div>
+
+<div class="order-cart-btn">
+    
+<input type="button" onclick="AddToCart()" class="add-cart" value="add to cart">
+
+<input type="button" onclick="Order()" class="place-order" value="Buy Now">
+
+
+</div>
+
+
+</div>
+
+<div id="container23">
+    
+<div class="top-bar9">
+
+<span class="fas fa-arrow-left back7" onclick="Back22()"></span>
+<img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/logo_lite-cbb357.png" alt="/" class="logo">
+<span class="fas fa-search srch7"></span>
+<span class="fas fa-shopping-cart kart8"></span>
+
+</div>
+
+<div class="img-card">
+
+<img src="https://rukminim1.flixcart.com/image/750/900/kmxsakw0/slipper-flip-flop/b/f/n/8-bw-001-pnk-bizwiz-pink-original-imagfq5byeydmmkf.jpeg?q=20" alt="/" class="product-img">
+<br>
+
+<span class="details"> Quantity: </span>
+<strong class="details"> 2</strong>
+
+</div>
+
+<div class="price-card">
+    
+<span class="product-price"><b> Ksh 219 </b></span>
+<span class="product-price2"><del> Ksh 699 </del></span>
+<span class="product-percent"> 30% off </span>
+<br>
+<img src="https://i.ibb.co/VBy4jHS/68264-fl-png.jpg" alt="/" class="fassured">
+<span class="delivery"> free delivery </span>
+<br>
+<span class="product-brand">kallu slipper wala</span>
+<br>
+<span class="product-desc"> Beautiful pink coloured slippers for girls (for 15-16 yrs) </span>
+<br>
+
+<div class="rating-bar">
+
+<span class="rating">4.1</span>
+<span class="fas fa-star star"></span>
+
+</div>
+
+<span class="rating-no">2,00,396 ratings</span>
+
+</div>
+
+<div class="avl-offr">
+    
+<span class="ofr-avl"> Available Offers</span>
+<br>
+<strong class="ofr-type"> limited time offer </strong> <span class="ofr-name"> Buy 1 and get 1 for free </span>
+<br><br>
+<strong class="ofr-type"> buy more save more </strong> <span class="ofr-name"> buy 5 flipkart assured items and get 10% off </span>
+<br><br>
+<strong class="ofr-type"> Bank offer </strong> <span class="ofr-name"> get this product for free from paying from XDXD bank </span>
+
+</div>
+
+<div class="nothing"></div>
+
+<div class="order-cart-btn">
+    
+<input type="button" onclick="AddToCart()" class="add-cart" value="add to cart">
+
+<input type="button" onclick="Order()" class="place-order" value="Buy Now">
+
+
+</div>
+
+
+</div>
+
+<div id="container24">
+    
+<div class="top-bar9">
+
+<span class="fas fa-arrow-left back7" onclick="Back23()"></span>
+<img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/logo_lite-cbb357.png" alt="/" class="logo">
+<span class="fas fa-search srch7"></span>
+<span class="fas fa-shopping-cart kart8"></span>
+
+</div>
+
+<div class="img-card">
+
+<img src="https://rukminim1.flixcart.com/image/750/750/kmwcuq80/pillow/f/k/x/ultra-soft-bed-pillow-5-kal-we-09-kalpana-industries-original-imagfp2qsfeg2nvw.jpeg?q=20" alt="/" class="product-img">
+<br>
+
+<span class="details"> Quantity: </span>
+<strong class="details"> 2 </strong>
+
+</div>
+
+<div class="price-card">
+    
+<span class="product-price"><b> Ksh 219 </b></span>
+<span class="product-price2"><del> Ksh 699 </del></span>
+<span class="product-percent"> 30% off </span>
+<br>
+<img src="https://i.ibb.co/VBy4jHS/68264-fl-png.jpg" alt="/" class="fassured">
+<span class="delivery"> free delivery </span>
+<br>
+<span class="product-brand"> Pillow </span>
+<br>
+<span class="product-desc"> comfortable white coloured pillow with cotton filled (4pcs in 1 pair) </span>
+<br>
+
+<div class="rating-bar">
+
+<span class="rating">4.1</span>
+<span class="fas fa-star star"></span>
+
+</div>
+
+<span class="rating-no">2,00,396 ratings</span>
+
+</div>
+
+<div class="avl-offr">
+    
+<span class="ofr-avl"> Available Offers</span>
+<br>
+<strong class="ofr-type"> limited time offer </strong> <span class="ofr-name"> Buy 1 and get 1 for free </span>
+<br><br>
+<strong class="ofr-type"> buy more save more </strong> <span class="ofr-name"> buy 5 flipkart assured items and get 10% off </span>
+<br><br>
+<strong class="ofr-type"> Bank offer </strong> <span class="ofr-name"> get this product for free from paying from XDXD bank </span>
+
+</div>
+
+<div class="nothing"></div>
+
+<div class="order-cart-btn">
+    
+<input type="button" onclick="AddToCart()" class="add-cart" value="add to cart">
+
+<input type="button" onclick="Order()" class="place-order" value="Buy Now">
+
+
+</div>
+
+
+</div>
+
+<div id="container25">
+    
+<div class="top-bar9">
+
+<span class="fas fa-arrow-left back7" onclick="Back24()"></span>
+<img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/logo_lite-cbb357.png" alt="/" class="logo">
+<span class="fas fa-search srch7"></span>
+<span class="fas fa-shopping-cart kart8"></span>
+
+</div>
+
+<div class="img-card">
+
+<img src="https://rukminim1.flixcart.com/image/750/900/k55n0y80/jewellery-set/z/z/r/skr48716-sukkhi-original-imafnwhzszydnzzb.jpeg?q=20" alt="/" class="product-img">
+<br>
+
+<span class="details"> Quantity: </span>
+<strong class="details"> 1 </strong>
+
+</div>
+
+<div class="price-card">
+    
+<span class="product-price"><b> Ksh 2119 </b></span>
+<span class="product-price2"><del> Ksh 2699 </del></span>
+<span class="product-percent"> 11% off </span>
+<br>
+<img src="https://i.ibb.co/VBy4jHS/68264-fl-png.jpg" alt="/" class="fassured">
+<span class="delivery"> free delivery </span>
+<br>
+<span class="product-brand">Kallu jewellers </span>
+<br>
+<span class="product-desc"> Beautiful gold plated necklace (5 pcs. in 1) </span>
+<br>
+
+<div class="rating-bar">
+
+<span class="rating">4.4</span>
+<span class="fas fa-star star"></span>
+
+</div>
+
+<span class="rating-no">2,68,736 ratings</span>
+
+</div>
+
+<div class="avl-offr">
+    
+<span class="ofr-avl"> Available Offers</span>
+<br>
+<strong class="ofr-type"> limited time offer </strong> <span class="ofr-name"> Buy 1 and get 1 for free </span>
+<br><br>
+<strong class="ofr-type"> buy more save more </strong> <span class="ofr-name"> buy 5 flipkart assured items and get 10% off </span>
+<br><br>
+<strong class="ofr-type"> Bank offer </strong> <span class="ofr-name"> get this product for free from paying from XDXD bank </span>
+
+</div>
+
+<div class="nothing"></div>
+
+<div class="order-cart-btn">
+    
+<input type="button" onclick="AddToCart()" class="add-cart" value="add to cart">
+
+<input type="button" onclick="Order()" class="place-order" value="Buy Now">
+
+
+</div>
+
+
+</div>
+
+<div id="container26">
+    
+<div class="top-bar9">
+
+<span class="fas fa-arrow-left back7" onclick="Back25()"></span>
+<img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/logo_lite-cbb357.png" alt="/" class="logo">
+<span class="fas fa-search srch7"></span>
+<span class="fas fa-shopping-cart kart8"></span>
+
+</div>
+
+<div class="img-card">
+
+<img src="https://rukminim1.flixcart.com/image/750/750/kppt47k0/balloon/3/c/2/33-combo-of-33-1-piece-happy-birthday-banner-30-black-and-golden-original-imag3vbeyyzxnzuv.jpeg?q=20" alt="/" class="product-img">
+<br>
+
+<span class="details"> Quantity: </span>
+<strong class="details"> 1 </strong>
+
+</div>
+
+<div class="price-card">
+    
+<span class="product-price"><b> Ksh 149 </b></span>
+<span class="product-price2"><del> Ksh 249 </del></span>
+<span class="product-percent"> 25%% off </span>
+<br>
+<img src="https://i.ibb.co/VBy4jHS/68264-fl-png.jpg" alt="/" class="fassured">
+<span class="delivery"> free delivery </span>
+<br>
+<span class="product-brand"> Flipkart smart buy</span>
+<br>
+<span class="product-desc"> Birthday banner (2.5 meter) </span>
+<br>
+
+<div class="rating-bar">
+
+<span class="rating">3.1</span>
+<span class="fas fa-star star"></span>
+
+</div>
+
+<span class="rating-no">51,146 ratings</span>
+
+</div>
+
+<div class="avl-offr">
+    
+<span class="ofr-avl"> Available Offers</span>
+<br>
+<strong class="ofr-type"> limited time offer </strong> <span class="ofr-name"> Buy 1 and get 1 for free </span>
+<br><br>
+<strong class="ofr-type"> buy more save more </strong> <span class="ofr-name"> buy 5 flipkart assured items and get 10% off </span>
+<br><br>
+<strong class="ofr-type"> Bank offer </strong> <span class="ofr-name"> get this product for free from paying from XDXD bank </span>
+
+</div>
+
+<div class="nothing"></div>
+
+<div class="order-cart-btn">
+    
+<input type="button" onclick="AddToCart()" class="add-cart" value="add to cart">
+
+<input type="button" onclick="Order()" class="place-order" value="Buy Now">
+
+
+</div>
+
+
+</div>
+
+<div id="container27">
+    
+<div class="top-bar9">
+
+<span class="fas fa-arrow-left back7" onclick="Back26()"></span>
+<img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/logo_lite-cbb357.png" alt="/" class="logo">
+<span class="fas fa-search srch7"></span>
+<span class="fas fa-shopping-cart kart8"></span>
+
+</div>
+
+<div class="img-card">
+
+<img src="https://rukminim1.flixcart.com/image/750/750/jeiukcw0/sticker/j/a/t/extra-large-wall-stickers-beautiful-multicolour-bird-cage-original-imaf378fkr3yf6fq.jpeg?q=20" alt="/" class="product-img">
+<br>
+
+<span class="details"> Quantity: </span>
+<strong class="details"> 2 </strong>
+
+</div>
+
+<div class="price-card">
+    
+<span class="product-price"><b> Ksh 219 </b></span>
+<span class="product-price2"><del> Ksh 399 </del></span>
+<span class="product-percent"> 16% off </span>
+<br>
+<img src="https://i.ibb.co/VBy4jHS/68264-fl-png.jpg" alt="/" class="fassured">
+<span class="delivery"> free delivery </span>
+<br>
+<span class="product-brand"> Flipkart Smart Buy</span>
+<br>
+<span class="product-desc"> Beautiful wall sticker with extra bond for home decor </span>
+<br>
+
+<div class="rating-bar">
+
+<span class="rating">4.9</span>
+<span class="fas fa-star star"></span>
+
+</div>
+
+<span class="rating-no">57,145 ratings</span>
+
+</div>
+
+<div class="avl-offr">
+    
+<span class="ofr-avl"> Available Offers</span>
+<br>
+<strong class="ofr-type"> limited time offer </strong> <span class="ofr-name"> Buy 1 and get 1 for free </span>
+<br><br>
+<strong class="ofr-type"> buy more save more </strong> <span class="ofr-name"> buy 5 flipkart assured items and get 10% off </span>
+<br><br>
+<strong class="ofr-type"> Bank offer </strong> <span class="ofr-name"> get this product for free from paying from XDXD bank </span>
+
+</div>
+
+<div class="nothing"></div>
+
+<div class="order-cart-btn">
+    
+<input type="button" onclick="AddToCart()" class="add-cart" value="add to cart">
+
+<input type="button" onclick="Order()" class="place-order" value="Buy Now">
+
+
+</div>
+
+
+</div>
+
+<div id="container28">
+    
+<div class="top-bar9">
+
+<span class="fas fa-arrow-left back7" onclick="Back27()"></span>
+<img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/logo_lite-cbb357.png" alt="/" class="logo">
+<span class="fas fa-search srch7"></span>
+<span class="fas fa-shopping-cart kart8"></span>
+
+</div>
+
+<div class="img-card">
+
+<img src="https://rukminim1.flixcart.com/image/750/750/kq18n0w0/mobile/z/x/f/narzo-30-rmx2156-realme-original-imag45ymjupkgkaq.jpeg?q=20" alt="/" class="product-img" id="product-img11">
+<br>
+
+<span class="details"> Model : </span>
+<strong class="details"> Racing blue </strong>
+
+</div>
+
+<div class="price-card">
+    
+<span class="product-price"><b> Ksh 11,999 </b></span>
+<span class="product-price2"><del> Ksh 14,999 </del></span>
+<span class="product-percent"> 20% off </span>
+<br>
+<img src="https://i.ibb.co/VBy4jHS/68264-fl-png.jpg" alt="/" class="fassured">
+<span class="delivery"> free delivery </span>
+<br>
+<span class="product-brand"> REALME NARZO</span>
+<br>
+<span class="product-desc"> Realme Narzo 30 (Racing Blue) (4gb ram, 64gb storage) </span>
+<br>
+
+<div class="rating-bar">
+
+<span class="rating">4.7</span>
+<span class="fas fa-star star"></span>
+
+</div>
+
+<span class="rating-no">7,39,416 ratings</span>
+
+</div>
+
+<div class="avl-offr">
+    
+<span class="ofr-avl"> Available Offers</span>
+<br>
+<strong class="ofr-type"> limited time offer </strong> <span class="ofr-name"> Buy 1 and get 1 for free </span>
+<br><br>
+<strong class="ofr-type"> buy more save more </strong> <span class="ofr-name"> buy 5 flipkart assured items and get 10% off </span>
+<br><br>
+<strong class="ofr-type"> Bank offer </strong> <span class="ofr-name"> get this product for free from paying from XDXD bank </span>
+
+</div>
+
+<div class="nothing"></div>
+
+<div class="order-cart-btn">
+    
+<input type="button" onclick="AddToCart()" class="add-cart" value="add to cart">
+
+<input type="button" onclick="Order()" class="place-order" value="Buy Now">
+
+
+</div>
+
+
+</div>
+
+<div id="container29">
+    
+<div class="top-bar9">
+
+<span class="fas fa-arrow-left back7" onclick="Back28()"></span>
+<img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/logo_lite-cbb357.png" alt="/" class="logo">
+<span class="fas fa-search srch7"></span>
+<span class="fas fa-shopping-cart kart8"></span>
+
+</div>
+
+<div class="img-card">
+
+<img src="https://rukminim1.flixcart.com/image/750/750/k4a7c7k0/bed/j/d/7/king-na-particle-board-bkwen00hhbs101p-flipkart-perfect-homes-original-imaf9m4fyrhzrp3g.jpeg?q=20" alt="/" class="product-img">
+<br>
+
+<span class="details"> Color : </span>
+<strong class="details"> melanine wenge </strong>
+
+</div>
+
+<div class="price-card">
+    
+<span class="product-price"><b> Ksh 12,790 </b></span>
+<span class="product-price2"><del> Ksh 17,999 </del></span>
+<span class="product-percent"> 32% off </span>
+<br>
+<img src="https://i.ibb.co/VBy4jHS/68264-fl-png.jpg" alt="/" class="fassured">
+<span class="delivery"> free delivery </span>
+<br>
+<span class="product-brand">kallu Furniture store </span>
+<br>
+<span class="product-desc"> flipkart perfect home opus engineered wood king size boxed bed  </span>
+<br>
+
+<div class="rating-bar">
+
+<span class="rating">5.0</span>
+<span class="fas fa-star star"></span>
+
+</div>
+
+<span class="rating-no">17,759 ratings</span>
+
+</div>
+
+<div class="avl-offr">
+    
+<span class="ofr-avl"> Available Offers</span>
+<br>
+<strong class="ofr-type"> limited time offer </strong> <span class="ofr-name"> Buy 1 and get 1 for free </span>
+<br><br>
+<strong class="ofr-type"> buy more save more </strong> <span class="ofr-name"> buy 5 flipkart assured items and get 10% off </span>
+<br><br>
+<strong class="ofr-type"> Bank offer </strong> <span class="ofr-name"> get this product for free from paying from XDXD bank </span>
+
+</div>
+
+<div class="nothing"></div>
+
+<div class="order-cart-btn">
+    
+<input type="button" onclick="AddToCart()" class="add-cart" value="add to cart">
+
+<input type="button" onclick="Order()" class="place-order" value="Buy Now">
+
+
+</div>
+
+
+</div>
+
+<div id="container30">
+    
+<div class="top-bar9">
+
+<span class="fas fa-arrow-left back7" onclick="Back29()"></span>
+<img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/logo_lite-cbb357.png" alt="/" class="logo">
+<span class="fas fa-search srch7"></span>
+<span class="fas fa-shopping-cart kart8"></span>
+
+</div>
+
+<div class="img-card">
+
+<img src="https://rukminim1.flixcart.com/image/750/750/kmxsakw0/computer/f/g/t/na-laptop-msi-original-imagfq9cthg4wxwh.jpeg?q=20" alt="/" class="product-img">
+<br>
+
+<span class="details"> Quantity: </span>
+<strong class="details"> 7 </strong>
+
+</div>
+
+<div class="price-card">
+    
+<span class="product-price"><b> Ksh 1,04,990 </b></span>
+<span class="product-price2"><del> Ksh 1,45,990 </del></span>
+<span class="product-percent"> 28% off </span>
+<br>
+<img src="https://i.ibb.co/VBy4jHS/68264-fl-png.jpg" alt="/" class="fassured">
+<span class="delivery"> free delivery </span>
+<br>
+<span class="product-brand">MSi</span>
+<br>
+<span class="product-desc"> MSi gp65 leopard core i7 10th gen (16gb ram , 1tb storage) </span>
+<br>
+
+<div class="rating-bar">
+
+<span class="rating">4.6</span>
+<span class="fas fa-star star"></span>
+
+</div>
+
+<span class="rating-no">1,19,196 ratings</span>
+
+</div>
+
+<div class="avl-offr">
+    
+<span class="ofr-avl"> Available Offers</span>
+<br>
+<strong class="ofr-type"> limited time offer </strong> <span class="ofr-name"> Buy 1 and get 1 for free </span>
+<br><br>
+<strong class="ofr-type"> buy more save more </strong> <span class="ofr-name"> buy 5 flipkart assured items and get 10% off </span>
+<br><br>
+<strong class="ofr-type"> Bank offer </strong> <span class="ofr-name"> get this product for free from paying from XDXD bank </span>
+
+</div>
+
+<div class="nothing"></div>
+
+<div class="order-cart-btn">
+    
+<input type="button" onclick="AddToCart()" class="add-cart" value="add to cart">
+
+<input type="button" onclick="Order()" class="place-order" value="Buy Now">
+
+
+</div>
+
+
+</div>
+
+
+
+<div id="container50">
+    
+<div class="top-bar9">
+
+<span class="fas fa-arrow-left back7" onclick="Back50()"></span>
+<img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/logo_lite-cbb357.png" alt="/" class="logo">
+<span class="fas fa-search srch7"></span>
+<span class="fas fa-shopping-cart kart8"></span>
+
+</div>
+
+<div class="img-card">
+
+<img src="https://rukminim1.flixcart.com/image/750/900/kiqbma80-0/suitcase/x/k/u/66-regloss-detour-65-4w-printed-reglossdetour654wprn-check-in-original-imafygcmhcxycvt5.jpeg?q=20" alt="/" class="product-img" id="product-img10">
+<br>
+
+<span class="details"> Quantity: </span>
+<strong class="details"> 2</strong>
+
+</div>
+
+<div class="price-card">
+    
+<span class="product-price"><b> Ksh 2199 </b></span>
+<span class="product-price2"><del> Ksh 2699 </del></span>
+<span class="product-percent"> 15% off </span>
+<br>
+<img src="https://i.ibb.co/VBy4jHS/68264-fl-png.jpg" alt="/" class="fassured">
+<span class="delivery"> free delivery </span>
+<br>
+<span class="product-brand"> SAFARI </span>
+<br>
+<span class="product-desc"> High quality Trolley bag for tourist purpose </span>
+<br>
+
+<div class="rating-bar">
+
+<span class="rating">4.7</span>
+<span class="fas fa-star star"></span>
+
+</div>
+
+<span class="rating-no">2,00,396 ratings</span>
+
+</div>
+
+<div class="avl-offr">
+    
+<span class="ofr-avl"> Available Offers</span>
+<br>
+<strong class="ofr-type"> limited time offer </strong> <span class="ofr-name"> Buy 1 and get 1 for free </span>
+<br><br>
+<strong class="ofr-type"> buy more save more </strong> <span class="ofr-name"> buy 5 flipkart assured items and get 10% off </span>
+<br><br>
+<strong class="ofr-type"> Bank offer </strong> <span class="ofr-name"> get this product for free from paying from XDXD bank </span>
+
+</div>
+
+<div class="nothing"></div>
+
+<div class="order-cart-btn">
+    
+<input type="button" onclick="AddToCart()" class="add-cart" value="add to cart">
+
+<input type="button" onclick="Order()" class="place-order" value="Buy Now">
+
+
+</div>
+
+
+</div>
+
+
+<script>
+
+var a = 0;
+Change1();
+
+function Change1() {
+var b;
+var c = document.getElementsByClassName("image");
+
+for (b = 0; b < c.length; b++) {
+c[b].style.display = "none";  
+}
+  
+a++;
+if (a > c.length) {
+a = 1
+}    
+c[a-1].style.display = "block";  
+
+setTimeout(Change1, 2500);
+}
+
+var aa = 0;
+Change2();
+
+function Change2() {
+var bb;
+var cc = document.getElementsByClassName("anm2");
+
+for (bb = 0; bb < cc.length; bb++) {
+cc[bb].style.display = "none";  
+}
+  
+aa++;
+if (aa > cc.length) {
+aa = 1
+}    
+cc[aa-1].style.display = "block";  
+
+setTimeout(Change2, 2500);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Fetch initial data and set up event listeners
+    fetchProducts();
+    fetchOrders();
+    fetchUsers();
+
+    // Event listener for navigation
+    const navLinks = document.querySelectorAll('.nav-links a');
+    navLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            const targetSection = e.target.getAttribute('data-section');
+            document.querySelectorAll('.admin-section').forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(targetSection).classList.add('active');
+        });
+    });
+
+    // Set default active section
+    document.getElementById('dashboard').classList.add('active');
+});
+
+// Function to log out
+function logout() {
+    alert('Logging out...');
+    // Redirect to login page or handle session termination
+}
+
+// Fetch products and display them
+function fetchProducts() {
+    fetch('/api/products')
+        .then(response => response.json())
+        .then(products => {
+            const productList = document.getElementById('product-list');
+            productList.innerHTML = '';
+            products.forEach(product => {
+                const productItem = document.createElement('div');
+                productItem.className = 'product-item';
+                productItem.innerHTML = `
+                    <h3>${product.name}</h3>
+                    <p>Price: $${product.price}</p>
+                    <button onclick="editProduct('${product.id}')">Edit</button>
+                    <button onclick="deleteProduct('${product.id}')">Delete</button>
+                `;
+                productList.appendChild(productItem);
+            });
+        })
+        .catch(error => console.error('Error fetching products:', error));
+}
+
+// Function to add a product
+function addProduct() {
+    const productName = prompt('Enter product name:');
+    const productPrice = prompt('Enter product price:');
+
+    if (productName && productPrice) {
+        fetch('/api/products', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ name: productName, price: parseFloat(productPrice) })
+        })
+        .then(response => response.json())
+        .then(product => {
+            alert('Product added successfully!');
+            fetchProducts(); // Refresh the product list
+        })
+        .catch(error => console.error('Error adding product:', error));
+    }
+}
+
+// Function to edit a product
+function editProduct(productId) {
+    const newProductName = prompt('Enter new product name:');
+    const newProductPrice = prompt('Enter new product price:');
+
+    if (newProductName && newProductPrice) {
+        fetch(`/api/products/${productId}`, {
+            method: 'PUT',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ name: newProductName, price: parseFloat(newProductPrice) })
+        })
+        .then(response => response.json())
+        .then(product => {
+            alert('Product updated successfully!');
+            fetchProducts(); // Refresh the product list
+        })
+        .catch(error => console.error('Error updating product:', error));
+    }
+}
+
+// Function to delete a product
+function deleteProduct(productId) {
+    if (confirm('Are you sure you want to delete this product?')) {
+        fetch(`/api/products/${productId}`, {
+            method: 'DELETE'
+        })
+        .then(response => response.json())
+        .then(() => {
+            alert('Product deleted successfully!');
+            fetchProducts(); // Refresh the product list
+        })
+        .catch(error => console.error('Error deleting product:', error));
+    }
+}
+
+// Fetch orders and display them
+function fetchOrders() {
+    fetch('/api/orders')
+        .then(response => response.json())
+        .then(orders => {
+            const orderList = document.getElementById('order-list');
+            orderList.innerHTML = '';
+            orders.forEach(order => {
+                const orderItem = document.createElement('div');
+                orderItem.className = 'order-item';
+                orderItem.innerHTML = `
+                    <h3>Order #${order.id}</h3>
+                    <p>Total: $${order.total}</p>
+                    <p>Status: ${order.status}</p>
+                `;
+                orderList.appendChild(orderItem);
+            });
+        })
+        .catch(error => console.error('Error fetching orders:', error));
+}
+
+// Fetch users and display them
+function fetchUsers() {
+    fetch('/api/users')
+        .then(response => response.json())
+        .then(users => {
+            const userList = document.getElementById('user-list');
+            userList.innerHTML = '';
+            users.forEach(user => {
+                const userItem = document.createElement('div');
+                userItem.className = 'user-item';
+                userItem.innerHTML = `
+                    <h3>${user.name}</h3>
+                    <p>Email: ${user.email}</p>
+                    <p>Role: ${user.role}</p>
+                `;
+                userList.appendChild(userItem);
+            });
+        })
+        .catch(error => console.error('Error fetching users:', error));
+}
+</script>
+
+<script>
+
+window.onload = alert(
+` ➡️ Created by Wanjala Diana \n\n ➡️ Wait for few seconds to load every icon \n\n ➡️ Click on every icon all of them are functional \n\n ➡️ Works best on smartphone may not look better on PC
+`
+);
+
+
+const Categories = () => {
+
+document.getElementById("container").style.display ="none" ;
+
+document.getElementById("container2").style.display ="inline-block" ;
+
+}
+
+const Back = () => {
+
+document.getElementById("container").style.display ="inline-block" ;
+
+document.getElementById("container2").style.display ="none" ;
+
+}
+
+const Show1 = () => {
+
+document.getElementById("container").style.display ="none" ;
+
+document.getElementById("container3").style.display ="inline-block" ;
+
+}
+
+const Back1 = () => {
+
+document.getElementById("container").style.display ="inline-block" ;
+
+document.getElementById("container3").style.display ="none" ;
+
+}
+
+const Show2 = () => {
+
+document.getElementById("container").style.display ="none" ;
+
+document.getElementById("container4").style.display ="inline-block" ;
+
+}
+
+const Back2 = () => {
+
+document.getElementById("container").style.display ="inline-block" ;
+
+document.getElementById("container4").style.display ="none" ;
+
+}
+
+const Show3 = () => {
+
+document.getElementById("container").style.display ="none" ;
+
+document.getElementById("container5").style.display ="inline-block" ;
+
+}
+
+const Back3 = () => {
+
+document.getElementById("container").style.display ="inline-block" ;
+
+document.getElementById("container5").style.display ="none" ;
+
+}
+
+const Show4 = () => {
+
+document.getElementById("container").style.display ="none" ;
+
+document.getElementById("container6").style.display ="inline-block" ;
+
+}
+
+const Back4 = () => {
+
+document.getElementById("container").style.display ="inline-block" ;
+
+document.getElementById("container6").style.display ="none" ;
+
+}
+
+const Show5 = () => {
+
+document.getElementById("container").style.display ="none" ;
+
+document.getElementById("container7").style.display ="inline-block" ;
+
+}
+
+const Back5 = () => {
+
+document.getElementById("container").style.display ="inline-block" ;
+
+document.getElementById("container7").style.display ="none" ;
+
+}
+
+const Show6 = () => {
+
+document.getElementById("container").style.display ="none" ;
+
+document.getElementById("container8").style.display ="inline-block" ;
+
+}
+
+const Back6 = () => {
+
+document.getElementById("container").style.display ="inline-block" ;
+
+document.getElementById("container8").style.display ="none" ;
+
+}
+
+const ViewCart = () => {
+
+document.getElementById("container").style.display ="none" ;
+
+document.getElementById("cart").style.display ="inline-block" ;
+
+}
+
+
+const Back7 = () => {
+
+document.getElementById("container").style.display ="inline-block" ;
+
+document.getElementById("cart").style.display ="none" ;
+
+}
+
+const Load1 = () => {
+
+document.getElementById("container").style.display ="none" ;
+
+document.getElementById("container6").style.display ="inline-block" ;
+
+}
+
+const Load2 = () => {
+
+document.getElementById("container").style.display ="none" ;
+
+document.getElementById("container9").style.display ="inline-block" ;
+
+}
+
+const Back8 = () => {
+
+document.getElementById("container").style.display ="inline-block" ;
+
+document.getElementById("container9").style.display ="none" ;
+
+}
+
+const Load3 = () => {
+
+document.getElementById("container").style.display ="none" ;
+
+document.getElementById("container10").style.display ="inline-block" ;
+
+}
+
+const Back9 = () => {
+
+document.getElementById("container").style.display ="inline-block" ;
+
+document.getElementById("container10").style.display ="none" ;
+
+}
+
+const Back50 = () => {
+
+document.getElementById("container").style.display ="inline-block" ;
+
+document.getElementById("container50").style.display ="none" ;
+
+}
+
+const Load4 = () => {
+
+document.getElementById("container").style.display ="none" ;
+
+document.getElementById("container50").style.display ="inline-block" ;
+
+}
+
+const Back10 = () => {
+
+document.getElementById("container").style.display ="inline-block" ;
+
+document.getElementById("container11").style.display ="none" ;
+
+}
+
+const OpenProduct1 = () => {
+
+document.getElementById("container").style.display ="none" ;
+
+document.getElementById("container11").style.display ="inline-block" ;
+
+}
+
+const Back11 = () => {
+
+document.getElementById("container").style.display ="inline-block" ;
+
+document.getElementById("container12").style.display ="none" ;
+
+}
+
+const OpenProduct2 = () => {
+
+document.getElementById("container").style.display ="none" ;
+
+document.getElementById("container12").style.display ="inline-block" ;
+
+}
+
+const Back12 = () => {
+
+document.getElementById("container").style.display ="inline-block" ;
+
+document.getElementById("container13").style.display ="none" ;
+
+}
+
+const OpenProduct3 = () => {
+
+document.getElementById("container").style.display ="none" ;
+
+document.getElementById("container13").style.display ="inline-block" ;
+
+}
+
+
+const Back13 = () => {
+
+document.getElementById("container").style.display ="inline-block" ;
+
+document.getElementById("container14").style.display ="none" ;
+
+}
+
+const OpenProduct4 = () => {
+
+document.getElementById("container").style.display ="none" ;
+
+document.getElementById("container14").style.display ="inline-block" ;
+
+}
+
+const Back14 = () => {
+
+document.getElementById("container").style.display ="inline-block" ;
+
+document.getElementById("container15").style.display ="none" ;
+
+}
+
+const OpenProduct5 = () => {
+
+document.getElementById("container").style.display ="none" ;
+
+document.getElementById("container15").style.display ="inline-block" ;
+
+}
+
+const Back15 = () => {
+
+document.getElementById("container").style.display ="inline-block" ;
+
+document.getElementById("container16").style.display ="none" ;
+
+}
+
+const OpenProduct6 = () => {
+
+document.getElementById("container").style.display ="none" ;
+
+document.getElementById("container16").style.display ="inline-block" ;
+
+}
+
+const Back16= () => {
+
+document.getElementById("container").style.display ="inline-block" ;
+
+document.getElementById("container17").style.display ="none" ;
+
+}
+
+const OpenProduct7 = () => {
+
+document.getElementById("container").style.display ="none" ;
+
+document.getElementById("container17").style.display ="inline-block" ;
+
+}
+
+const OpenProduct8 = () => {
+document.getElementById("container").style.display ="none" ;
+
+document.getElementById("container18").style.display ="inline-block" ;
+
+}
+
+const Back17 = () => {
+document.getElementById("container18").style.display ="none" ;
+
+document.getElementById("container").style.display ="inline-block" ;
+
+}
+
+const BookFlight = () => {
+
+alert("flight booking not available yet")
+
+}
+
+const Back18 = () => {}
+
+
+const OpenProduct9 = () => {
+document.getElementById("container").style.display ="none" ;
+
+document.getElementById("container20").style.display ="inline-block" ;
+
+}
+
+const Back19 = () => {
+document.getElementById("container20").style.display ="none" ;
+
+document.getElementById("container").style.display ="inline-block" ;
+
+}
+
+const OpenProduct10 = () => {
+document.getElementById("container").style.display ="none" ;
+
+document.getElementById("container21").style.display ="inline-block" ;
+
+}
+
+const Back20 = () => {
+document.getElementById("container21").style.display ="none" ;
+
+document.getElementById("container").style.display ="inline-block" ;
+
+}
+
+const OpenProduct11 = () => {
+document.getElementById("container").style.display ="none" ;
+
+document.getElementById("container22").style.display ="inline-block" ;
+
+}
+
+const Back21 = () => {
+document.getElementById("container22").style.display ="none" ;
+
+document.getElementById("container").style.display ="inline-block" ;
+
+}
+
+const OpenProduct12 = () => {
+document.getElementById("container").style.display ="none" ;
+
+document.getElementById("container23").style.display ="inline-block" ;
+
+}
+
+const Back22 = () => {
+document.getElementById("container23").style.display ="none" ;
+
+document.getElementById("container").style.display ="inline-block" ;
+
+}
+
+const BookInsurance = () => {
+alert("insurance booking nor available yet!")
+}
+
+const OpenProduct13 = () => {
+document.getElementById("container").style.display ="none" ;
+
+document.getElementById("container24").style.display ="inline-block" ;
+
+}
+
+const Back23 = () => {
+document.getElementById("container24").style.display ="none" ;
+
+document.getElementById("container").style.display ="inline-block" ;
+
+}
+
+const OpenProduct14 = () => {
+document.getElementById("container").style.display ="none" ;
+
+document.getElementById("container25").style.display ="inline-block" ;
+
+}
+
+const Back24 = () => {
+document.getElementById("container25").style.display ="none" ;
+
+document.getElementById("container").style.display ="inline-block" ;
+
+}
+
+const OpenProduct15 = () => {
+document.getElementById("container").style.display ="none" ;
+
+document.getElementById("container26").style.display ="inline-block" ;
+
+}
+
+const Back25 = () => {
+document.getElementById("container26").style.display ="none" ;
+
+document.getElementById("container").style.display ="inline-block" ;
+
+}
+
+const OpenProduct16 = () => {
+document.getElementById("container").style.display ="none" ;
+
+document.getElementById("container27").style.display ="inline-block" ;
+
+}
+
+const Back26 = () => {
+document.getElementById("container27").style.display ="none" ;
+
+document.getElementById("container").style.display ="inline-block" ;
+}
+
+const OpenProduct17 = () => {
+document.getElementById("container").style.display ="none" ;
+
+document.getElementById("container28").style.display ="inline-block" ;
+
+}
+
+const Back27 = () => {
+document.getElementById("container28").style.display ="none" ;
+
+document.getElementById("container").style.display ="inline-block" ;
+}
+
+const OpenProduct18 = () => {
+document.getElementById("container").style.display ="none" ;
+
+document.getElementById("container29").style.display ="inline-block" ;
+
+}
+
+const Back28 = () => {
+document.getElementById("container29").style.display ="none" ;
+
+document.getElementById("container").style.display ="inline-block" ;
+}
+
+
+const OpenProduct19 = () => {
+document.getElementById("container").style.display ="none" ;
+
+document.getElementById("container30").style.display ="inline-block" ;
+
+}
+
+const Back29 = () => {
+document.getElementById("container30").style.display ="none" ;
+
+document.getElementById("container").style.display ="inline-block" ;
+}
+
+const AddToCart = () => {
+alert("added to cart ☑️")
+}
+
+const Order = () => {
+alert(
+` Order successfull ✓ \n\n Order-id : XDXD725024 \n\n txn id : FLP5043790 \n\n Order will be delivered to your home as soon as possible `
+)
+}
+
+
+
+</script>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
